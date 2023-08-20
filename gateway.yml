@@ -14,7 +14,7 @@ spring:
         - id: catalogRoute
           uri: lb://catalog-service/
           predicates:
-            - Path: /Catalog/**
+            - Path: /catalog/**
 eureka:
   client:
     register-with-eureka: true
