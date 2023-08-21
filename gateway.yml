@@ -3,8 +3,7 @@ server:
 spring:
   application:
     name: gateway
-  config:
-    import: configserver:http://localhost:8888
+
   cloud:
     gateway:
       discovery:
@@ -12,7 +11,7 @@ spring:
           enable: true
       routes:
         - id: catalogRoute
-          uri: lb://movie-service/
+          uri: http://movie-service/
           predicates:
             - Path: /catalog/**
 eureka:
