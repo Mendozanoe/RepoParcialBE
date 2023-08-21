@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 spring:
   application:
     name: gateway
@@ -8,12 +9,13 @@ spring:
     gateway:
       discovery:
         locator:
-          enable: true
+          enabled: true
       routes:
         - id: catalogRoute
           uri: lb://movie-service/
-      predicates:
-        - Path: /catalog/**
+          predicates:
+            - Path=/catalog/**  # Predicado para esta ruta
+
 eureka:
   client:
     register-with-eureka: true
