@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: serie-service
+    mongodb:
+        embedded:
+          version: 4.0.2
+    data:
+        mongodb:
+          database: test
+          port: 27017
+    server:
+      port: 0
 eureka:
   client:
     register-with-eureka: true
@@ -15,3 +24,4 @@ eureka:
       default-zone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
+
