@@ -15,6 +15,10 @@ spring:
           uri: lb://movie-service/
           predicates:
             - Path=/catalog/**
+        - id: catalogRoute
+          uri: lb://serie-service/
+          predicates:
+            - Path=/catalog/serie/**
 
 eureka:
   client:
