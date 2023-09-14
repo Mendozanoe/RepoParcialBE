@@ -12,18 +12,23 @@ spring:
       database: test
       port: 27017
   rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+
+    rabbitmq:
+      addresses: localhost:5672
+      virtual-host: app_vhost
       username: guest
       password: guest
-      host: localhost
-      port: 5672
-queues:
-  catalog-listener-queue:
-    name: catalog-listener-queue
-
   zipkin:
     baseUrl: http://localhost:9411/
     enable: true
 
+queues:
+  catalog-listener-queue:
+    name: catalog-listener-queue
 
 eureka:
   client:

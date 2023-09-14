@@ -16,7 +16,7 @@ spring:
     password: guest
     host: localhost
     port: 5672
-queue:
+queues:
   movie-sender-queue:
     name: movie-sender-queue
 
@@ -36,4 +36,3 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
-
