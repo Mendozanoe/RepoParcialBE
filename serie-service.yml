@@ -23,10 +23,10 @@ spring:
     password: guest
     host: localhost
     port: 5672
+
 queues:
   serie-sender-queue:
     name: serie-sender-queue
-
 
 eureka:
   client:
