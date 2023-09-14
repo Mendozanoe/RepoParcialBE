@@ -18,12 +18,7 @@ spring:
       virtual-host: app_vhost
       username: guest
       password: guest
-  zipkin:
-    baseUrl: http://localhost:9411/
-    enable: true
-    sender:
-      type: rabbit
-      enable: true
+  
 
 eureka:
   client:
