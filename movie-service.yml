@@ -8,13 +8,9 @@ spring:
     url: jdbc:mysql://localhost:3370/movie-dev
     username: usr-movie
     password: pwd-movie
-  sleuth:
-    probability: 1.0
-    rabbitmq:
-      addresses: localhost:5672
-      virtual-host: app_vhost
-      username: guest
-      password: guest
+  zipkin:
+    baseUrl: http://localhost:9411/
+    enable: true
 
   jpa:
     hibernate.ddl-auto: update
