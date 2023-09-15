@@ -9,6 +9,9 @@ spring:
     url: jdbc:mysql://localhost:3370/movie-dev
     username: usr-movie
     password: pwd-movie
+  jpa:
+    hibernate:
+      ddl-auto: update
 
   zipkin:
     baseUrl: http://localhost:9411/
@@ -24,10 +27,8 @@ queue:
   pelicula:
     name: pelicula
 
-jpa:
-  jpa:
-    hibernate:
-      ddl-auto: update
+
+
 
 eureka:
   client:
