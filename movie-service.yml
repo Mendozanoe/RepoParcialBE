@@ -25,9 +25,9 @@ queue:
     name: pelicula
 
 jpa:
-  hibernate.ddl-auto: update
-  generate-ddl: true
-  show-sql: true
+  jpa:
+    hibernate:
+      ddl-auto: update
 
 eureka:
   client:
