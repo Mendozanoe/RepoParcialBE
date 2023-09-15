@@ -9,21 +9,16 @@ spring:
     url: jdbc:mysql://localhost:3370/movie-dev
     username: usr-movie
     password: pwd-movie
+
   zipkin:
     baseUrl: http://localhost:9411/
     enable: true
-    sender:
-      type: rabbit
-      enable: true
 
-  sleuth:
-    sampler:
-      probability: 1.0
   rabbitmq:
     username: guest
     password: guest
-    host: localhost
-    port: 5672
+    host:
+     port: 5672
 
 queues:
   movie-sender-queue:
