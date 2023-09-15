@@ -22,10 +22,10 @@ spring:
     enable: true
 
 queue:
-  movie-sender-queue:
-    name: movie-sender-queue
-  serie-sender-queue:
-    name: serie-queue
+  movie:
+    name: movie
+  serie:
+    name: serie
 
 eureka:
   client:

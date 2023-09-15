@@ -21,8 +21,8 @@ spring:
      port: 5672
 
 queue:
-  movie-sender-queue:
-    name: movie-sender-queue
+  movie:
+    name: movie
 
   jpa:
     hibernate.ddl-auto: update
