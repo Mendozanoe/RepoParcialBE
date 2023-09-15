@@ -20,12 +20,12 @@ spring:
     password: guest
     host: localhost
     port: 5672
+
 queue:
   pelicula:
     name: pelicula
   serie:
     name: pelicula
-
 
 eureka:
   client:
@@ -34,8 +34,8 @@ eureka:
     registry-fetch-interval-seconds: 5
     healthcheck:
       enable: true
-    service-url:
-      default-zone: http://localhost:8761/eureka
+  service-url:
+    default-zone: http://localhost:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
