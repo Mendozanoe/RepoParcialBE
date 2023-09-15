@@ -23,9 +23,9 @@ spring:
 
   queue:
     pelicula:
-      name: pelicula
+      name: colaPelicula
     serie:
-      name: serie
+      name: colaSerie
 
 eureka:
   client:
