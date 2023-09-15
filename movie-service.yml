@@ -24,10 +24,10 @@ queue:
   movie:
     name: movie
 
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+jpa:
+  hibernate.ddl-auto: update
+  generate-ddl: true
+  show-sql: true
 
 eureka:
   client:
