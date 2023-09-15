@@ -22,9 +22,9 @@ spring:
     port: 5672
 queue:
   pelicula:
-    name: moviequeue
+    name: pelicula
   serie:
-    name: seriequeue
+    name: pelicula
 
 
 eureka:
