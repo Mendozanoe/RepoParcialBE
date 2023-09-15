@@ -20,7 +20,7 @@ spring:
     host:
      port: 5672
 
-queues:
+queue:
   movie-sender-queue:
     name: movie-sender-queue
 

@@ -21,7 +21,7 @@ spring:
     host:
      port: 5672
 
-queues:
+queue:
   serie-sender-queue:
     name: serie-sender-queue
 

@@ -21,11 +21,11 @@ spring:
     baseUrl: http://localhost:9411/
     enable: true
 
-
-
-queues:
-  catalog-listener-queue:
-    name: catalog-listener-queue
+queue:
+  movie-sender-queue:
+    name: movie-sender-queue
+  serie-sender-queue:
+    name: serie-queue
 
 eureka:
   client:
