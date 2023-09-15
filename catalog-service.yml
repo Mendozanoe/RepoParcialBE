@@ -25,7 +25,7 @@ queue:
   pelicula:
     name: pelicula
   serie:
-    name: pelicula
+    name: serie
 
 eureka:
   client:
